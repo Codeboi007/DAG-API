@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tabular Augmentation</title>
+</head>
+<body>
+    <h1>Tabular Data Augmentation</h1>
+    <form action="/augment/tabular" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".csv" required>
+        <select name="augmentation">
+            <option value="smote">SMOTE</option>
+            <option value="noise">Add Gaussian Noise</option>
+        </select>
+        <button type="submit">Upload & Augment</button>
+    </form>
+</body>
+</html>

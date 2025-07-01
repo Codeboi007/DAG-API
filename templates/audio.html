@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Audio Augmentation</title>
+</head>
+<body>
+    <h1>Audio Augmentation</h1>
+    <form action="/augment/audio" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="audio/*" required>
+        <select name="augmentation">
+            <option value="pitch">Pitch Shift</option>
+            <option value="noise">Add Noise</option>
+            <option value="stretch">Time Stretch</option>
+        </select>
+        <button type="submit">Upload & Augment</button>
+    </form>
+</body>
+</html>

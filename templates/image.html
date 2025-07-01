@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Image Augmentation</title>
+</head>
+<body>
+    <h1>Image Augmentation</h1>
+    <form action="/augment/image" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*" required>
+        <select name="augmentation">
+            <option value="rotate">Rotate</option>
+            <option value="flip">Flip</option>
+            <option value="brightness">Brightness</option>
+        </select>
+        <button type="submit">Upload & Augment</button>
+    </form>
+</body>
+</html>
