@@ -11,7 +11,7 @@
 * Audio Augmentation — pitch shifting, noise addition, time stretching
 * Tabular Augmentation — Gaussian noise, row duplication
 * Simple user interface built with Jinja2 templates
-* Modular backend logic for easy maintenance and expansion
+* Modular backend logic for easy maintenance and expansions
 
 ---
 
@@ -92,4 +92,3 @@ Then visit `http://localhost:5000` in your browser.
 * Cloud integration for file uploads/downloads
 * Augmentation history per session
 * Result previews before download
-
