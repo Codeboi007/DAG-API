@@ -1,0 +1,8 @@
+flask
+torch
+torchvision
+pillow
+librosa
+soundfile
+numpy
+pandas
