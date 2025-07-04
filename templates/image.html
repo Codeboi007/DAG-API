@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>Image Augmentation</title>
 </head>
 <body>
     <h1>Image Augmentation</h1>
-    <form action="/augment/image" method="post" enctype="multipart/form-data">
+    <form action="{{ url_for('image') }}" method="post" enctype="multipart/form-data">
         <input type="file" name="file" accept="image/*" required>
         <select name="augmentation">
             <option value="rotate">Rotate</option>
