@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>Text Augmentation</title>
 </head>
 <body>
     <h1>Text Augmentation</h1>
-    <form action="/augment/text" method="post">
+    <form action="{{ url_for('text') }}" method="post">
         <textarea name="text" rows="5" cols="50" required></textarea>
         <select name="augmentation">
             <option value="synonym">Synonym Replacement</option>
